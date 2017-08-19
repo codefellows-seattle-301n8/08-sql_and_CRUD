@@ -134,7 +134,7 @@ app.delete('/articles', function(request, response) {
 });
 
 // COMMENT: What is this function invocation doing?
-// Put your response here...
+// Creating a DB if it does not exist
 loadDB();
 
 app.listen(PORT, function() {

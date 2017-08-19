@@ -42,7 +42,7 @@ app.get('/new', function(request, response) {
 // REVIEW: Routes for making API calls to use CRUD Operations on our database
 app.get('/articles', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
-  // Put your response here... This works with numbers 2,3,4, and 5. Part 3 + 4 relate to client.query(), and then part 5 relates to the response.send() method. This relates to the READ potion of CRUD. 
+  // Put your response here... This works with numbers 3,4, and 5. Part 3 + 4 relate to client.query(), and then part 5 relates to the response.send() method. This relates to the READ potion of CRUD.
   client.query('SELECT * FROM articles')
   .then(function(result) {
     response.send(result.rows);
@@ -54,7 +54,7 @@ app.get('/articles', function(request, response) {
 
 app.post('/articles', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
-  // Put your response here...
+  // Put your response here... This relates to part 3,4,5. Part 3+4 relate to the client.query() method. and then the code within the .then() and .catch() related to part 5 "response". And this relates to the CREATE portion of CRUD.
   client.query(
     `INSERT INTO
     articles(title, author, "authorUrl", category, "publishedOn", body)

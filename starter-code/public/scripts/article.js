@@ -43,6 +43,7 @@ Article.loadAll = function(rows) {
 };
 
 Article.fetchAll = function(callback) {
+  console.log('trying to fetch');
   $.get('/articles')
   .then(
     function(results) {

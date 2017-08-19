@@ -75,7 +75,7 @@ articleView.setTeasers = function() {
 
 articleView.initNewArticlePage = function() {
   $('.tab-content').show();
-  });
+  
 
   $('#new-form').on('change', 'input, textarea', articleView.create);
   $('#new-form').on('submit', articleView.submit);
@@ -100,6 +100,7 @@ articleView.create = function() {
     hljs.highlightBlock(block);
   });
 
+};
 
 articleView.submit = function(event) {
   event.preventDefault();

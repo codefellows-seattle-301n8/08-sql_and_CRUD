@@ -121,6 +121,7 @@ app.delete('/articles/:id', function(request, response) {
 
 app.delete('/articles', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
+  // Put your response here...  // Put your response here...This relates to parts 3, 4, and 5. The truncateTable method is being used on Article to access this piece of server.js. This corresponds to the delete part of CRUD.
 
   client.query(
     'DELETE FROM articles;'
@@ -134,7 +135,7 @@ app.delete('/articles', function(request, response) {
 });
 
 // COMMENT: What is this function invocation doing?
-// Put your response here...
+// Put your response here... First it creates a table if it doesn't exist already, giving the table its schema as well. It then runs loadArticles.
 loadDB();
 
 app.listen(PORT, function() {

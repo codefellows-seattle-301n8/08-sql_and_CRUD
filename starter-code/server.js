@@ -41,7 +41,7 @@ app.get('/new', function(request, response) {
 // REVIEW: Routes for making API calls to use CRUD Operations on our database
 app.get('/articles', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
-  // Put your response here...
+  // Request(2), Query(3), Result(4), Response(5) still read from crud, the client is sending a query for everything in articles, then sending the response of reseult.rows
   client.query('SELECT * FROM articles')
   .then(function(result) {
     response.send(result.rows);

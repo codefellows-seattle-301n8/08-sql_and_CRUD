@@ -1,0 +1,23 @@
+{
+  "name": "08-sql_and_crud",
+  "version": "1.0.0",
+  "description": "Alec and Thao practiced sql and crud",
+  "main": "server.js",
+  "dependencies": {
+    "pg": "^7.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanhthaoluu/08-sql_and_CRUD.git"
+  },
+  "author": "Alec and Thao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanhthaoluu/08-sql_and_CRUD/issues"
+  },
+  "homepage": "https://github.com/hanhthaoluu/08-sql_and_CRUD#readme"
+}

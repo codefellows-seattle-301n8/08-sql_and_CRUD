@@ -79,7 +79,7 @@ app.post('/articles', function(request, response) {
 
 app.put('/articles/:id', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
-  // Put your response here...
+  // Put your response here...This relates to parts 3, 4, and 5. The prototype method of Article is using the updateRecord method to access this piece of server.js. This corresponds to the updated part of CRUD.
   client.query(
     `UPDATE articles
     SET

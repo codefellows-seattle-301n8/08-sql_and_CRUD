@@ -106,7 +106,7 @@ app.put('/articles/:id', function(request, response) {
 
 app.delete('/articles/:id', function(request, response) {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
-  // Put your response here...
+  // (3), (4), DESTROY of CRUD, deleteRecord is the method...
   client.query(
     `DELETE FROM articles WHERE article_id=$1;`,
     [request.params.id]

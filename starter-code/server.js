@@ -4,6 +4,8 @@
 const fs = require('fs');
 const express = require('express');
 
+const pg = require('pg');
+
 // REVIEW: Require in body-parser for post requests in our server. If you want to know more about what this does, read the docs!
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;

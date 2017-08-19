@@ -8,6 +8,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
 const app = express();
+const pg = require('pg');
 
 // TODO: Complete the connection string for the url that will connect to your local postgres database
 // Windows and Linux users; You should have retained the user/pw from the pre-work for this course.

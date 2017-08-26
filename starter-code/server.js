@@ -38,7 +38,7 @@ app.get('/new', function(request, response) {
   // Put your response here...
   // Diagram Number: 5! (maybe 1?)
   // Method: nothing
-  // CRUD: none
+  // CRUD: Retrieve/Read
   response.sendFile('new.html', {root: './public'});
 });
 

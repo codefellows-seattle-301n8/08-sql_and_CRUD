@@ -169,7 +169,7 @@ function loadArticles() {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
   // Put your response here...
   // Diagram: 3, 4, 5
-  // Article.js:
+  // Article.js: No response being sent bback to interact with article.js so it does not interact with article.js
   // CRUD: Create
   client.query('SELECT COUNT(*) FROM articles')
   .then(result => {
@@ -198,7 +198,7 @@ function loadDB() {
   // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
   // Put your response here...
   // Diagram: 3, 4, 5
-  // Article.js: .loadAll
+  // Article.js: no interaction with article.js
   // CRUD: Create
   client.query(`
     CREATE TABLE IF NOT EXISTS articles (
